@@ -1,5 +1,5 @@
 ## Backbone Twitch Applicatie
-### An application build for the course Frontend Development.
+### Frontend Development serious Javascript.
 
 Gebouwt met Backbone + Webpack and ES6
 
