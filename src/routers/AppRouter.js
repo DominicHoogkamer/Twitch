@@ -9,6 +9,7 @@ import BroadcastView from '../views/BroadcastView';
 import SearchView from '../views/SearchView';
 import StreamerView from '../views/StreamerView';
 
+
 const AppRouter = Router.extend({
     routes: {
         '': 'list',

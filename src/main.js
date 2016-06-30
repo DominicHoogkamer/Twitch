@@ -24,6 +24,7 @@ import AppRouter from './routers/AppRouter'
         setGlobalVariables();
 
         let router = new AppRouter();
+        //Start the router with the root
         Backbone.history.start({ pushState: true, root: '/Twitch_filter/' });
     };
 
