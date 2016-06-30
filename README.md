@@ -1,27 +1,22 @@
-## Twitch Filter
+## Backbone Twitch Applicatie
 ### An application build for the course Frontend Development.
 
-Build with Backbone + Webpack and Babel for ES6 Features.
+Gebouwt met Backbone + Webpack and ES6
 
-The application generates music / artist recommendations based on your input. Users without an last.fm account
-can use the 2 most basic features to generate recommendations based on an artistname and based on trending artists.
+Met deze Backbone applicatie moet het vooral duidelijk worden dat gebruikers op een gemakkelijke manier
+broadcasts terug kunnen vinden doormiddel van een filter systeem.
 
-Users with an last.fm account can use their account name to generate a personalized list of recommendations based on their listening behaviour.
+Models:
 
-The users can generate recommendations in 3 ways:
+De models worden voorzien van info uit de Twitch Api, met daarin een aantal specifieke data strings.
+Daarnaast is er nog een overervende model wat de Streamer zelf wordt.
 
-#### Based on a artist name. (generates 10 similar recommendations.)
+Views:
 
-Collections used :
-- http://www.last.fm/api/show/artist.getSimilar
+De views worden onderverdeeld in de header met daarin het aantal broadcasts wat is teruggekomen uit de API.
+Daarnaast is er ook nog een view die zorgt voor de filter functie.
+En uiteindelijk de grootste view die alle responses inlaad en laat zien in een tabel.
 
-#### Based on a last.fm username. (generates 10 recommendations for every artist they listened to this week.)
+Routing:
 
-Collections Used : 
-- http://www.last.fm/api/show/user.getWeeklyArtistChart
-- http://www.last.fm/api/show/artist.getSimilar
-
-#### Based on trending artists. ( generates 50 recommendations based on the most trending ones globally. )
-
-Collections Used : 
-- http://www.last.fm/api/show/chart.getTopArtists
+De routing wil ik vooral gaan gebruiken om extra informatie aan de gebruiker te laten zien.
