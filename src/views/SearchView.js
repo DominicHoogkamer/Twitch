@@ -2,7 +2,9 @@ import _ from 'underscore';
 import {View} from 'backbone';
 import $ from 'jquery';
 
-
+/**
+ * SearchView that holds al the search functionality
+ */
 const SearchView = View.extend({
     //Get the view element
     el: '#searchBox',

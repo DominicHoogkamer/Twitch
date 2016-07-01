@@ -7,7 +7,12 @@ const Channel = Model.extend({
     url: 'https://api.twitch.tv/kraken/channels/lirik/',
     defaults: {
         name: '',
-        title: ''
+        title: '',
+        game: '',
+        url: '',
+        followers: '',
+        views: '',
+        img: ''
     }
 });
 
